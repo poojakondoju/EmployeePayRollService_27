@@ -8,4 +8,3 @@ public class EmployeePayrollMain {
         employeePayrollService.writeEmployeeDataInConsole();
     }
 }
-
