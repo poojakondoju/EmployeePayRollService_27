@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class EmployeePayrollService {
-    private List<EmployeeData> employeePayrollList = new ArrayList<EmployeeData>();
+    private List<EmployeeData> employePayrollList = new ArrayList<EmployeeData>();
     Scanner scanner = new Scanner(System.in);
 
     public void readEmployeeDataFromConsole() {
@@ -15,11 +15,10 @@ public class EmployeePayrollService {
         String Name = scanner.next();
         System.out.println("Enter the salary");
         int salary = scanner.nextInt();
-        employeePayrollList.add(new EmployeeData(id, Name, salary));
+        employePayrollList.add(new EmployeeData(id, Name, salary));
     }
 
-    public void writeEmployeeDataInConsole() //write the employee data in console.
-    {
-        System.out.println("Writing Employee Pay Roll Data \n" + employeePayrollList);
+    public void writeEmployeeDataInConsole() {
+        System.out.println("Writing Employee Pay Roll Data \n" + employePayrollList);
     }
 }
